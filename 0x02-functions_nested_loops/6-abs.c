@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdlib.h>
 
 /**
  * _abs -Entry point: Found in main

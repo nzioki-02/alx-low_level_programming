@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * print_alphabet_x10 - Entry Point
@@ -9,9 +10,9 @@
 void print_alphabet_x10(void)
 {
 	char c;
-	int i, j;
+	int i;
 
-	for (j = 0; j < 10; j++)
+	for (i =0; i < 10; i++)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 			_putchar(c);

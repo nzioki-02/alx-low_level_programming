@@ -2,7 +2,8 @@
 #include <unistd.h>
 
 /**
- * _abs : Found in main
+ * _abs -Entry point: Found in main
+ * @r: Input
  * Description: Computes the absolute value of an integer
  * Return: absolute value
  */

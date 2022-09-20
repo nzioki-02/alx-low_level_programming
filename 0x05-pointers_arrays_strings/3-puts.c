@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * _puts - Prints a string followed by new line
@@ -18,4 +17,3 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-	

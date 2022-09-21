@@ -8,15 +8,26 @@
 
 void rev_string(char *s)
 {
-	int i = 0;
+	int length = 0;
+	int mid;
+	int i;
+	char temporary;
 
-	while (s[i] != '\0')
+	while (s[length] != '\0')
 	{
-		i++;
+		length++;
 	}
-	for (i = i - 1; i >= 0; i--)
+	/* Halfing the string*/
+	mid = length / 2;
+	/*Reversing from the middle both ways*/
+
+	for (i = 0; i < mid; i++)
 	{
+		temporary = s[i];
+		s[i] = s[length - i - 1];
+		s[length] = temporary;
 		_putchar(s[i]);
+		_putchar(s[length]);
 	}
 	_putchar('\n');
 }

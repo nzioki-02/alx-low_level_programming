@@ -10,8 +10,8 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char src[];
-	char dest[];
+/*	char src; */
+/*	char dest; */
 	char *ret_ptr = dest;
 
 	while (*src != '\0')

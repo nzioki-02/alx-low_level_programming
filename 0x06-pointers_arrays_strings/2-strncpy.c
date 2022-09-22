@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * *_strncpy - copies a sting
@@ -12,6 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
+	if (dest == NULL)
+		return (NULL);
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
